@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up | The Sifted Cafe</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#eadec7">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="The Sifted Cafe, home">
+        <img src="assets/logo-wordmark.png" alt="the sifted" width="700" height="186">
+        <span class="brand-tag">cafe &amp; bakery</span>
+      </a>
+      <a class="auth-back" href="index.html">&larr; Back to home</a>
+    </div>
+  </header>
+
+  <main id="main" class="auth-main">
+    <section class="auth-card" aria-labelledby="auth-title">
+      <h1 id="auth-title">Create an account</h1>
+      <p class="auth-intro">It takes less than a minute. You need an account to request a table.</p>
+      <div id="auth-status" class="form-status" aria-live="polite"></div>
+      <form id="register-form" class="auth-form" novalidate>
+      <div class="field">
+        <label for="register-full-name">Full name</label>
+        <input id="register-full-name" type="text" autocomplete="name" required aria-describedby="err-register-full-name">
+        <p class="field-error" id="err-register-full-name" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="register-email">Email</label>
+        <input id="register-email" type="email" autocomplete="email" required aria-describedby="err-register-email">
+        <p class="field-error" id="err-register-email" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="register-phone">Contact number</label>
+        <input id="register-phone" type="tel" autocomplete="tel" required aria-describedby="err-register-phone">
+        <p class="field-error" id="err-register-phone" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="register-password">Password</label>
+        <div class="pw-wrap">
+          <input id="register-password" type="password" autocomplete="new-password" required aria-describedby="hint-register-password err-register-password">
+          <button type="button" class="pw-toggle" data-toggle-password="register-password" aria-label="Show password" aria-pressed="false">Show</button>
+        </div>
+        <p class="field-hint" id="hint-register-password">At least 8 characters, with a letter and a number.</p>
+        <p class="field-error" id="err-register-password" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="register-confirm-password">Confirm password</label>
+        <div class="pw-wrap">
+          <input id="register-confirm-password" type="password" autocomplete="new-password" required aria-describedby="err-register-confirm-password">
+          <button type="button" class="pw-toggle" data-toggle-password="register-confirm-password" aria-label="Show password" aria-pressed="false">Show</button>
+        </div>
+        <p class="field-error" id="err-register-confirm-password" aria-live="polite"></p>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" id="register-submit">Create account</button>
+      <p class="auth-demo">Demo only: your account is saved in this browser. Do not use a real password.</p>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html" id="to-login">Log in</a></p>
+    </section>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-api.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

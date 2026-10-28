@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Sifted Cafe | Cafe &amp; Bakery</title>
+  <meta name="description" content="The Sifted Cafe is a cafe and bakery with branches in Calamba and Cabuyao, Laguna. See the featured menu and take a look inside.">
+  <meta name="theme-color" content="#eadec7">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Fonts from the existing Sifted Cafe project (Fraunces for headings, Inter for text). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="The Sifted Cafe, back to top">
+        <img src="assets/logo-wordmark.png" alt="the sifted" width="700" height="186">
+        <span class="brand-tag">cafe &amp; bakery</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit us</a></li>
+          <li class="nav-guest"><a href="login.html">Log in</a></li>
+          <li class="nav-guest"><a href="signup.html" class="nav-cta">Sign up</a></li>
+          <li class="nav-member" hidden><a href="account.html">My account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section id="top" class="hero on-dark" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <img class="hero-img" src="assets/drinks.jpg" width="1800" height="1800" fetchpriority="high"
+               alt="Six iced and layered coffee drinks in glass tumblers on a glass table, beside a glowing amber lamp.">
+          <span class="eyebrow">Cafe &amp; bakery &middot; Calamba &middot; Cabuyao</span>
+          <h1 id="hero-title">We sift out the rush and keep the good moments.</h1>
+          <p class="hero-lead">A cozy space to slow down, sip something good, and enjoy the moment.</p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary" data-reserve>Reserve a table</button>
+            <a class="btn btn-outline-light" href="#menu">See the featured menu</a>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <!-- ================= HOW RESERVING WORKS ================= -->
+    <section id="reserve-info" class="section section-alt" aria-labelledby="reserve-info-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Reservations</span>
+          <h2 id="reserve-info-title">Saving a table is easy</h2>
+          <p class="menu-note">Create a free account to request a table and keep track of your reservations. Already have one? <a href="login.html">Log in</a>.</p>
+        </div>
+        <ol class="steps-grid">
+          <li><span class="step-num">1</span><h3>Sign up or log in</h3><p>It takes less than a minute. <a href="signup.html">Sign up</a> or <a href="login.html">log in</a>.</p></li>
+          <li><span class="step-num">2</span><h3>Pick a branch and time</h3><p>Calamba or Cabuyao, for 2 to 10 guests.</p></li>
+          <li><span class="step-num">3</span><h3>We confirm it</h3><p>Our team reviews every request.</p></li>
+          <li><span class="step-num">4</span><h3>Track it online</h3><p>See upcoming and past reservations in your account.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="photo-frame">
+          <img src="assets/cafe-interior.jpg" width="975" height="1300" loading="lazy"
+               alt="Inside The Sifted Cafe: a yellow paper lantern hangs over a long wooden table, and the lit 'the sifted cafe' sign hangs above the counter.">
+        </figure>
+        <div class="about-copy">
+          <span class="eyebrow">Our story</span>
+          <h2 id="about-title">We sift out the rush and keep the good moments.</h2>
+          <p>A cozy neighborhood cafe made for slow mornings, good conversations, and cups worth coming back for. Whether you are here to relax, meet friends, get some work done, or enjoy a good meal, there is a seat with your name on it.</p>
+
+          <ul class="values">
+            <li>
+              <h3>Thoughtfully roasted</h3>
+              <p>Beans sourced and roasted with care, brewed the way they deserve to be.</p>
+            </li>
+            <li>
+              <h3>Made fresh daily</h3>
+              <p>Pastries and food prepared fresh each morning.</p>
+            </li>
+            <li>
+              <h3>A place to stay awhile</h3>
+              <p>Comfortable seating and a calm atmosphere, whether you are working or catching up.</p>
+            </li>
+            <li>
+              <h3>Warm, familiar service</h3>
+              <p>A team that genuinely enjoys having you here.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED MENU ================= -->
+    <section id="menu" class="section section-alt" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">From the counter</span>
+          <h2 id="menu-title">Featured menu</h2>
+          <p class="menu-note">A few of our favorites. Prices are not shown on this page.</p>
+        </div>
+
+        <ul class="menu-grid">
+          <li class="menu-card menu-coffee" data-photo="assets/menu/spanish-latte.jpg">
+            <span class="menu-category">Coffee</span>
+            <h3>Spanish Latte</h3>
+            <p>Smooth espresso blended with creamy milk and a touch of sweetness.</p>
+          </li>
+          <li class="menu-card menu-coffee" data-photo="assets/menu/iced-caramel-macchiato.jpg">
+            <span class="menu-category">Coffee</span>
+            <h3>Iced Caramel Macchiato</h3>
+            <p>Espresso layered over cold milk with a swirl of caramel.</p>
+          </li>
+          <li class="menu-card menu-green" data-photo="assets/menu/matcha-latte.jpg">
+            <span class="menu-category">Non-coffee</span>
+            <h3>Matcha Latte</h3>
+            <p>Stone-ground matcha whisked with steamed milk.</p>
+          </li>
+          <li class="menu-card menu-food" data-photo="assets/menu/truffle-mushroom-pasta.jpg">
+            <span class="menu-category">Food</span>
+            <h3>Truffle Mushroom Pasta</h3>
+            <p>Creamy pasta tossed with mushrooms and truffle oil.</p>
+          </li>
+          <li class="menu-card menu-bakery" data-photo="assets/menu/classic-croissant.jpg">
+            <span class="menu-category">Pastries</span>
+            <h3>Classic Croissant</h3>
+            <p>Buttery, flaky croissant baked fresh every morning.</p>
+          </li>
+          <li class="menu-card menu-bakery" data-photo="assets/menu/basque-burnt-cheesecake.jpg">
+            <span class="menu-category">Desserts</span>
+            <h3>Basque Burnt Cheesecake</h3>
+            <p>Rich, caramelized cheesecake with a soft, jammy center.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Take a look inside</span>
+          <h2 id="gallery-title">Gallery</h2>
+        </div>
+
+        <ul class="gallery-grid" id="gallery-grid">
+          <li><button type="button" class="gallery-item" data-full="assets/drinks.jpg">
+            <img src="assets/drinks.jpg" width="1800" height="1800" loading="lazy"
+                 alt="Six iced and layered coffee drinks in glass tumblers on a glass table, beside a glowing amber lamp.">
+          </button></li>
+          <li><button type="button" class="gallery-item" data-full="assets/cafe-interior.jpg">
+            <img src="assets/cafe-interior.jpg" width="975" height="1300" loading="lazy"
+                 alt="A yellow paper lantern hangs over a long wooden table; the lit 'the sifted cafe' sign hangs above the counter.">
+          </button></li>
+          <li><button type="button" class="gallery-item" data-full="assets/cafe-counter.jpg">
+            <img src="assets/cafe-counter.jpg" width="975" height="1300" loading="lazy"
+                 alt="The counter with the red 'the sifted cafe' sign, a wood-panelled wall, an espresso machine and a round metal table in front.">
+          </button></li>
+          <li><button type="button" class="gallery-item" data-full="assets/record-shelf.jpg">
+            <img src="assets/record-shelf.jpg" width="975" height="1300" loading="lazy"
+                 alt="A wooden wall shelf of vinyl records above a yellow chair, a red chair, and a turntable with a yellow typewriter.">
+          </button></li>
+          <li><button type="button" class="gallery-item" data-full="assets/seating-corner.jpg">
+            <img src="assets/seating-corner.jpg" width="975" height="1300" loading="lazy"
+                 alt="A seating corner with a glass table, mixed vintage chairs and a glowing orange wall lamp beside the coffee bar.">
+          </button></li>
+          <li><button type="button" class="gallery-item" data-full="assets/wall-calendar.jpg">
+            <img src="assets/wall-calendar.jpg" width="975" height="1300" loading="lazy"
+                 alt="A green magnetic wall calendar next to a round, glowing orange lamp.">
+          </button></li>
+        </ul>
+      </div>
+    </section>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Photo viewer">
+      <img id="lightbox-img" alt="">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+      <div class="lightbox-controls">
+        <button type="button" class="btn btn-outline-light btn-small" id="lightbox-prev">Previous</button>
+        <button type="button" class="btn btn-outline-light btn-small" id="lightbox-next">Next</button>
+        <button type="button" class="btn btn-primary btn-small" id="lightbox-close">Close</button>
+      </div>
+    </dialog>
+
+    <!-- ================= VISIT US ================= -->
+    <section id="visit" class="section section-alt" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <span class="eyebrow">Find us</span>
+          <h2 id="visit-title">Visit us</h2>
+
+          <div class="branch-card">
+            <h3>Calamba</h3>
+            <address>
+              Unit 2, Pabs2men Building, Chipeco Ave, Brgy. 3,<br>
+              Calamba, 4027 Laguna, Philippines
+            </address>
+            <p class="hours">Open every day, 10:00 AM to 10:00 PM</p>
+          </div>
+
+          <div class="branch-card">
+            <h3>Cabuyao</h3>
+            <p>Street address coming soon.</p>
+            <p class="hours">Open every day, 9:00 AM to 9:00 PM</p>
+          </div>
+
+          <div class="branch-card">
+            <h3>Get in touch</h3>
+            <p>Message us on social media. A phone number and email will be added soon.</p>
+            <p class="social-row">
+              <a href="https://www.facebook.com/TheSiftedCafe" target="_blank" rel="noopener">Facebook<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a href="https://www.instagram.com/thesiftedcafe" target="_blank" rel="noopener">Instagram<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </p>
+          </div>
+        </div>
+
+        <figure class="photo-frame visit-photo">
+          <iframe
+            src="https://www.google.com/maps?q=Unit%202%2C%20Pabs2men%20Building%2C%20Chipeco%20Ave%2C%20Brgy.%203%2C%20Calamba%2C%204027%20Laguna%2C%20Philippines&amp;z=16&amp;output=embed"
+            width="600" height="450" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="A map of The Sifted Cafe: Unit 2, Pabs2men Building, Chipeco Ave, Brgy. 3, Calamba, 4027 Laguna, Philippines."></iframe>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">the sifted <span>cafe &amp; bakery</span></p>
+        <p class="footer-small">We sift out the rush and keep the good moments.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2 class="footer-heading">Explore</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Featured menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit us</a></li>
+          <li class="nav-guest"><a href="login.html">Log in</a></li>
+          <li class="nav-guest"><a href="signup.html">Sign up</a></li>
+          <li class="nav-member" hidden><a href="account.html">My account</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-heading">Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/TheSiftedCafe" target="_blank" rel="noopener">Facebook<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li><a href="https://www.instagram.com/thesiftedcafe" target="_blank" rel="noopener">Instagram<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> The Sifted Cafe. A student project.</p>
+      <p><a href="staff.html">Staff</a></p>
+    </div>
+  </footer>
+
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-api.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
